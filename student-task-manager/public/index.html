@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <form id="taskForm">
+        <label for="courseId">Course ID:</label>
+        <input type="text" id="courseId" required><br>
+
+        <label for="taskName">Task Name:</label>
+        <input type="text" id="taskName" required><br>
+
+        <label for="dueDate">Due Date:</label>
+        <input type="date" id="dueDate" required><br>
+
+        <label for="details">Details:</label>
+        <textarea id="details"></textarea><br>
+
+        <button type="submit">Add Task</button>
+    </form>
+
+    <h2>Fetch Tasks for Course</h2>
+    <input type="text" id="courseIdFetch" placeholder="Enter Course ID">
+    <button id="fetchTasks">Fetch Tasks</button>
+
+    <ul id="taskList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
